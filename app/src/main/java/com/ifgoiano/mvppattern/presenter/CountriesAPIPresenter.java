@@ -23,7 +23,6 @@ public class CountriesAPIPresenter {
     }
 
     private void fetchCountries() {
-        Log.i("Nano", "TIME: "+System.currentTimeMillis());
         service.getCountries()
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())

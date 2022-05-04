@@ -6,7 +6,7 @@ public class Country {
 
     private String id;
 
-    @SerializedName("name")
+    @SerializedName("string")
     public String countryName;
 
     public Country(){}

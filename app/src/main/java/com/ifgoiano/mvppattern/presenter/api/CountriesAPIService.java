@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class CountriesAPIService {
 
-    public static final String BASE_URL = "https://restcountries.com/v2/";
+    public static final String BASE_URL = "http://ccdb.hemiola.com/characters/";
 
     private CountriesApi api;
 

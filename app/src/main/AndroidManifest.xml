@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MVPPattern" >
+        android:theme="@style/Theme.MVPPattern"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".view.LocalRepositoryActivity"
             android:exported="false" />

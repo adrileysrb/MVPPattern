@@ -32,9 +32,10 @@ public class APIActivity extends AppCompatActivity implements CountriesAPIPresen
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("TIMESYSTEM", "TIME: "+System.currentTimeMillis());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apiactivity);
-        setTitle("MVP Activity");
+        setTitle("MVP Activity - API");
 
 
         presenter = new CountriesAPIPresenter(this);
@@ -56,7 +57,7 @@ public class APIActivity extends AppCompatActivity implements CountriesAPIPresen
         progress.setVisibility(View.GONE);
         list.setVisibility(View.VISIBLE);
         adapter.notifyDataSetChanged();
-        Log.i("Nano", "TIME: "+System.currentTimeMillis());
+        Log.i("TIMESYSTEM", "TIME: "+System.currentTimeMillis());
     }
 
     @Override
@@ -74,7 +75,4 @@ public class APIActivity extends AppCompatActivity implements CountriesAPIPresen
         progress.setVisibility(View.VISIBLE);
     }
 
-    public static Intent getIntent(Context context) {
-        return new Intent(context, APIActivity.class);
-    }
 }
